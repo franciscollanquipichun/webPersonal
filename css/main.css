@@ -1,0 +1,90 @@
+body {
+    background: #339999; /* Old browsers */
+    background: -moz-linear-gradient(left,  #339999 0%, #2e827c 40%, #05abe0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#339999), color-stop(40%,#2e827c), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #339999 0%,#2e827c 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #339999 0%,#2e827c 40%,#05abe0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #339999 0%,#2e827c 40%,#05abe0 100%); /* IE10+ */
+    background: linear-gradient(to right,  #339999 0%,#2e827c 40%,#05abe0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339999', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 */
+}
+
+footer {
+    text-align: right;
+    margin: 0 5px 3px 0px;
+}
+
+footer i {
+    color: rgba(10,10,10,0.2);
+}
+footer i:hover {
+    color: gold;
+}
+
+form {
+    border-top: 1px solid rgba(10,10,10,0.2);
+    display: none;
+    margin-top: 15px;
+    padding: 7px 3px 5px 3px;
+}
+
+form #text-count {
+    font-size: 11px;
+    text-align: right;
+}
+
+.form-group input, .form-group textarea{
+    background: #363636;
+    border-color: #222222;
+    color: honeydew;
+}
+
+#mainConteiner {
+    padding: 5px 3px 0 3px;
+}
+
+#vcard {
+    max-width: 500px;
+    min-width: 380px;
+    background-color:rgba(250,250,250,0.3);
+}
+#follow, #contact {
+    background-color:rgba(250,250,250,0.3);
+    border-color: rgba(10,10,10,0.2);
+    display: none;
+}
+
+#follow a, #contact a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgba(10,10,10,0.2);
+}
+
+#follow a:hover, #contact a:hover {
+    text-shadow: 2px 2px 8px rgba(10,10,10,0.2);
+}
+
+#twitter:hover {
+    color: #4099FF;
+}
+#instagram:hover {
+    color: #517fa4;
+}
+#spotify:hover {
+    color: #81b71a;
+}
+#slideshare:hover {
+    color: #007bb6;
+}
+#linkedin:hover {
+    color: #007bb6;
+}
+#xing:hover {
+    color: #126567;
+}
+#google:hover {
+    color: #dd4b39;
+}
+#mail:hover {
+    color: #F0DC82;
+}
