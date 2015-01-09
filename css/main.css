@@ -9,6 +9,17 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339999', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 */
 }
 
+#background-fix {
+    height: 100vh;
+    background: -moz-linear-gradient(top, rgba(48,244,192,0) 0%, rgba(253,167,67,1) 99%, rgba(255,166,66,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,244,192,0)), color-stop(99%,rgba(253,167,67,1)), color-stop(100%,rgba(255,166,66,1)));
+    background: -webkit-linear-gradient(top, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
+    background: -o-linear-gradient(top, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
+    background: -ms-linear-gradient(top, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
+    background: linear-gradient(to bottom, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0030f4c0', endColorstr='#ffa642',GradientType=0 );
+}
+
 footer {
     text-align: right;
     margin: 0 5px 3px 0px;
