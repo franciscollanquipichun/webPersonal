@@ -1,36 +1,48 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
-    background: #339999; /* Old browsers */
-    background: -moz-linear-gradient(left,  #339999 0%, #2e827c 40%, #05abe0 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#339999), color-stop(40%,#2e827c), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #339999 0%,#2e827c 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #339999 0%,#2e827c 40%,#05abe0 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #339999 0%,#2e827c 40%,#05abe0 100%); /* IE10+ */
-    background: linear-gradient(to right,  #339999 0%,#2e827c 40%,#05abe0 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339999', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 */
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    /* background gradient */
+    background: rgb(252,255,244); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(233,233,206,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.footer {
+    background: #333 url("../image/texture.png");
+    bottom: 0;
+    position: absolute;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    width: 100%;
 }
 
-#background-fix {
-    height: 100vh;
-    background: -moz-linear-gradient(top, rgba(48,244,192,0) 0%, rgba(253,167,67,1) 99%, rgba(255,166,66,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,244,192,0)), color-stop(99%,rgba(253,167,67,1)), color-stop(100%,rgba(255,166,66,1)));
-    background: -webkit-linear-gradient(top, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
-    background: -o-linear-gradient(top, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
-    background: -ms-linear-gradient(top, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
-    background: linear-gradient(to bottom, rgba(48,244,192,0) 0%,rgba(253,167,67,1) 99%,rgba(255,166,66,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0030f4c0', endColorstr='#ffa642',GradientType=0 );
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+.container .text-muted {
+    margin: 20px 0;
 }
 
-footer {
-    text-align: right;
-    margin: 0 5px 3px 0px;
-}
 
-footer i {
-    color: rgba(10,10,10,0.2);
-}
-footer i:hover {
-    color: gold;
-}
+/* Main style
+-------------------------------------------------- */
 
 form {
     border-top: 1px solid rgba(10,10,10,0.2);
@@ -48,10 +60,6 @@ form #text-count {
     background: #363636;
     border-color: #222222;
     color: honeydew;
-}
-
-#mainConteiner {
-    padding: 5px 3px 0 3px;
 }
 
 #vcard {

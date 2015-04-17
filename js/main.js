@@ -3,10 +3,9 @@
  */
 
 $( document ).ready(function() {
-    console.log( "ready!" );
     openFollowMe();
     openContact();
-    openContactForm()
+    openContactForm();
 });
 
 function openFollowMe() {
