@@ -21,11 +21,14 @@ body {
     background: #333 url("../image/texture.png");
     bottom: 0;
     position: absolute;
+    text-align: center;
     /* Set the fixed height of the footer here */
-    height: 60px;
+    height: 80px;
     width: 100%;
 }
-
+.footer a {
+    color: #888;
+}
 
 /* Custom page CSS
 -------------------------------------------------- */
