@@ -6,6 +6,14 @@ $( document ).ready(function() {
     openFollowMe();
     openContact();
     openContactForm();
+
+    $('#contact-form').on('submit', function (e) {
+        sendAjaxForm();
+        e.preventDefault();
+        //OR
+        return false;
+    });
+
 });
 
 function openFollowMe() {
@@ -33,4 +41,25 @@ function textcount() {
         var ms = $(this).val();
         $( "#text-count" ).html(ms.length+":255");
     });
+}
+
+function sendAjaxForm() {
+
+    var form_data = {
+        'captcha'   : $('.g-recaptcha-response').val(),
+        'name'      : $('input[name=nombre]').val(),
+        'mail'      : $('input[name=mail]').val(),
+        'msg'       : $('textarea[name=text]').val()
+    };
+
+    $.ajax({
+        url: 'mailto.php',
+        type:'POST',
+        data: form_data,
+        success: function (response) {
+            //examina la respuesta
+            console.log(response);
+        }
+    });
+
 }
