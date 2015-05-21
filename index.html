@@ -81,7 +81,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">E-mail</label>
-                    <input type="email" name="mail" class="form-control" id="exampleInputEmail1" placeholder="Su correo electronico">
+                    <input type="email" name="mail" class="form-control" id="exampleInputEmail1" placeholder="Su correo electrónico">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Mensaje</label>
@@ -89,7 +89,11 @@
                     <p id="text-count">0:255</p>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LcbqwATAAAAAMI3YmMiPWQE_1KG0a6N-S8CsqeC"></div>
-                <button type="submit" class="btn btn-default btn-xs"> Enviar </button>
+
+                <div id="form-submit-area" role="alert">
+                    <button id="submit-btn" type="submit" class="btn btn-primary alert-form-response"> Enviar formulario <i class="fa fa-paper-plane"></i></button>
+                    <div class="alert-form-response form-msg"></div>
+                </div>
             </form>
 
         </div>

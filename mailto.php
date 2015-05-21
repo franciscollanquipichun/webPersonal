@@ -11,6 +11,8 @@ $name = $_POST['name'];
 $email = $_POST['mail'];
 $msg = $_POST['msg'];
 
+$serviceResponce = array();
+
 /**
  * validacion de captcha
  */
@@ -27,7 +29,7 @@ if(!empty($captcha_data)) {
     //valida el capcha
     if($aceptado->success == TRUE ) {
 
-        if($name !== '' && $email !== '' && $msg !== '') {
+        if($name !== '' || $email !== '' || $msg !== '') {
 
             $email_to = "francisco.llanquipichun@gmail.com";
             $email_subject = "Contacto desde el sitio web";
@@ -38,19 +40,31 @@ if(!empty($captcha_data)) {
             $email_message .= "Mensaje:\n" . $msg . "\n";
 
             $headers = 'From: francisco@llanquipichun.cl'."\r\n".
-                'Reply-To: francisco@llanquipichun.cl'."\r\n" .
+                'Reply-To: '.$email."\r\n" .
                 'X-Mailer: PHP/' . phpversion();
             @mail($email_to, $email_subject, $email_message, $headers);
 
-            echo "¡El formulario se ha enviado con éxito!";
+            //echo "¡El formulario se ha enviado con éxito!";
+            $serviceResponce['res'] = TRUE;
+            $serviceResponce['msg'] = 'Formulario enviado con exito';
+            echo( json_encode($serviceResponce) );
         }else {
-            echo('no se ha podido enviar el mensaje: '.$name.' '.$email.' '.$msg);
+            //echo('no se ha podido enviar el mensaje: '.$name.' '.$email.' '.$msg);
+            $serviceResponce['res'] = FALSE;
+            $serviceResponce['msg'] = 'No se ha podido enviar el mensaje, falta información';
+            echo( json_encode($serviceResponce) );
         }
 
     }else{
-        echo('Tu eres un robot... no me engañas');
+        //echo('Tu eres un robot... no me engañas');
+        $serviceResponce['res'] = FALSE;
+        $serviceResponce['msg'] = 'Tu eres un robot... no me engañas';
+        echo( json_encode($serviceResponce) );
     }
 
 }else{
-    echo('no hay captcha');
+    //echo('no hay captcha');
+    $serviceResponce['res'] = FALSE;
+    $serviceResponce['msg'] = 'No se ha detectado el captcha';
+    echo( json_encode($serviceResponce) );
 }

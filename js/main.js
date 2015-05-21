@@ -44,6 +44,9 @@ function textcount() {
 }
 
 function sendAjaxForm() {
+    var responseArea = $('#form-submit-area');
+    var btn = $('#submit-btn');
+    var msg = $('.form-msg');
 
     var form_data = {
         'captcha'   : $('.g-recaptcha-response').val(),
@@ -56,10 +59,33 @@ function sendAjaxForm() {
         url: 'mailto.php',
         type:'POST',
         data: form_data,
+        before: function () {
+            btn.html(' Enviar formulario <i class="fa fa-circle-o-notch fa-spin"></i>');
+        },
         success: function (response) {
-            //examina la respuesta
-            console.log(response);
+            response = JSON.parse(response);
+
+            if(response.res == true){
+
+                responseArea.removeClass('alert alert-danger');
+                responseArea.addClass('alert alert-success');
+                msg.html('<p>'+response.msg+' <i class="fa fa-smile-o"></i></p>');
+
+            }else{
+
+                responseArea.removeClass('alert alert-success');
+                responseArea.addClass('alert alert-danger');
+                msg.html('<p>'+response.msg+'</p>');
+            }
+        },
+        error: function(e) {
+
+            responseArea.removeClass('alert alert-success');
+            responseArea.addClass('alert alert-danger');
+            msg.html('<p>Lo siento. Ha ocurrido un problema al enviar el formulario, por favor intentelo mas tarde.</p>');
+            console.log(e.message);
         }
     });
 
+    grecaptcha.reset();
 }

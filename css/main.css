@@ -110,3 +110,17 @@ form #text-count {
 #mail:hover {
     color: #F0DC82;
 }
+
+
+/* Special
+-------------------------------------------------- */
+.g-recaptcha {
+    margin-bottom: 15px;
+}
+
+.alert-form-response {
+    display: inline-block;
+}
+.form-msg p {
+   margin-left: 15px;
+}
