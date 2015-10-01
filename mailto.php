@@ -13,8 +13,6 @@ $name = $_POST['name'];
 $email = $_POST['mail'];
 $msg = $_POST['msg'];
 
-$serviceResponce = array();
-
 /**
  * validacion de captcha
  */
@@ -47,27 +45,33 @@ if(!empty($captcha_data)) {
                 'X-Mailer: PHP/' . phpversion();
             @mail($email_to, $email_subject, $email_message, $headers);
 
-            //echo "¡El formulario se ha enviado con éxito!";
-            $serviceResponce['res'] = TRUE;
-            $serviceResponce['msg'] = 'Formulario enviado con exito';
-            echo( json_encode($serviceResponce) );
-        }else {
-            //echo('no se ha podido enviar el mensaje: '.$name.' '.$email.' '.$msg);
-            $serviceResponce['res'] = FALSE;
-            $serviceResponce['msg'] = 'No se ha podido enviar el mensaje, falta información';
-            echo( json_encode($serviceResponce) );
+            formResponse(TRUE, 'Formulario enviado con exito');
+
+        }else{
+            formResponse(FALSE, 'No se ha podido enviar el mensaje, falta información');
         }
 
     }else{
-        //echo('Tu eres un robot... no me engañas');
-        $serviceResponce['res'] = FALSE;
-        $serviceResponce['msg'] = 'Tu eres un robot... no me engañas';
-        echo( json_encode($serviceResponce) );
+        formResponse(FALSE, 'Tu eres un robot... no me engañas');
     }
 
 }else{
-    //echo('no hay captcha');
-    $serviceResponce['res'] = FALSE;
-    $serviceResponce['msg'] = 'No se ha detectado el captcha';
-    echo( json_encode($serviceResponce) );
+    formResponse(FALSE, 'No se ha detectado el captcha');
+}
+
+
+
+/**
+ * envia respuesta al formulario
+ * @param boolean $res
+ * @param string $msg
+ */
+function formResponse($res, $msg) {
+
+    $serviceResponce['res'] = $res;
+    $serviceResponce['msg'] = $msg;
+
+    echo(
+        json_encode($serviceResponce)
+    );
 }
