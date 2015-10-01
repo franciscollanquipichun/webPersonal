@@ -30,6 +30,28 @@ body {
     color: #888;
 }
 
+.header, .header .page-header {
+    border: none;
+    text-align: center;
+}
+
+.header .lead img {
+    width: 150px;
+    margin: 0 7px;
+}
+
+.content-body, .content-social {
+    border-top: solid;
+}
+
+.content-social {
+    padding-bottom: 15px;
+}
+
+.content-social .btn-toolbar {
+    padding: 25px 0 15px;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -47,7 +69,7 @@ body {
 /* Main style
 -------------------------------------------------- */
 
-form {
+form, #contact-linkedin {
     border-top: 1px solid rgba(10,10,10,0.2);
     display: none;
     margin-top: 15px;

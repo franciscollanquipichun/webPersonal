@@ -6,6 +6,7 @@ $( document ).ready(function() {
     openFollowMe();
     openContact();
     openContactForm();
+    openContactLinkedIn();
 
     $('#contact-form').on('submit', function (e) {
         sendAjaxForm();
@@ -19,19 +20,28 @@ $( document ).ready(function() {
 function openFollowMe() {
     $( "#follow-btn" ).click(function() {
         $("#contact").hide();
-        $( "#follow" ).toggle("fast");
+        $("#follow").toggle("fast");
     });
 }
 function openContact() {
     $( "#contact-btn" ).click(function() {
-        $( "#follow" ).hide();
+        $("#follow").hide();
         $("#contact").toggle("fast");
     });
 }
 
 function openContactForm() {
     $( "#mail" ).click(function() {
+        $("#contact-linkedin" ).hide();
         $("#contact-form").toggle("fast");
+        textcount();
+    });
+}
+
+function openContactLinkedIn() {
+    $( "#linkedin" ).click(function() {
+        $("#contact-form" ).hide();
+        $("#contact-linkedin").toggle("fast");
         textcount();
     });
 }
