@@ -1,10 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Francisco Llanquipichun <francisco.llanquipichun@gmail.com>
+ * @author Francisco Llanquipichun <francisco.llanquipichun@gmail.com>
  * Date: 19-01-15
  * Time: 21:55
  */
+
+require 'Constants.php';
 
 $captcha_data = $_POST['captcha'];
 $name = $_POST['name'];
@@ -18,8 +20,9 @@ $serviceResponce = array();
  */
 if(!empty($captcha_data)) {
 
-    $google_url = "https://www.google.com/recaptcha/api/siteverify";
-    $secret = '6LcbqwATAAAAAGcAaUkYfDelgh0WqgjIby4EYVkO';
+    $google_url = $_CAPTCHA_URL;
+    $secret = $_CAPTCHA_SECRET;
+
     $ip = $_SERVER['REMOTE_ADDR'];
     $url = $google_url."?secret=".$secret."&response=".$captcha_data."&remoteip=".$ip;
 
