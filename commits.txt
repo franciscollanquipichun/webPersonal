@@ -1,0 +1,94 @@
+commit cf35f90746fa5d9ba5c07af8c8f361f5d200fc78
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Thu Oct 1 00:14:05 2015 -0300
+
+    agregada funciona response
+
+commit 3d00eda124260d29cbcdebaa33e796803867dd04
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Thu Oct 1 00:13:47 2015 -0300
+
+    actualizado github
+    
+    Agregado link de repositorio en footer.
+    Actualizada descripción de repositorio.
+
+commit 740ece19ad1aca6ed8110254dda5b28ae75d7627
+Author: Francisco Llanquipichun <Francisco.llanquipichun@gmail.com>
+Date:   Thu Oct 1 00:04:06 2015 -0300
+
+    actualizada descripción git
+
+commit faa2a6751b89ae1af6706fd9065edf39232b9b28
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Wed Sep 30 23:40:30 2015 -0300
+
+    seguridad constantes
+    
+    Creado archivo .php con constantes oculto.
+    Modificada script php para lectura de contantes.
+    modificados datos de reCaptcha (secret)
+
+commit b0bf9e398c173ab46f5de218a3918d0f31fe66a6
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Wed Sep 30 23:38:36 2015 -0300
+
+    Actualizado front
+    
+    Agregada tarjeta de linkedIn
+    Modificada key de reCaptcha (seguridad) en formulario de contacto
+
+commit 0ca2d7d3f9e7a4132c88c6441887b03728d12cb1
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Wed May 20 22:55:54 2015 -0300
+
+    actualizado formulario de contacto
+    
+    Implementados mensajes de respuesta al enviar el formulario de contacto.
+    cambiado email de respuesta.
+
+commit 99d659ff649918baab1f0c90910f98173584f66d
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Wed May 20 01:30:46 2015 -0300
+
+    Habilitado envio de correo
+    
+    Agregado formulario de contacto funciona, validado por captcha.
+
+commit 19d315ced3ce962e34f5d0a26f4c42602269001d
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Tue May 12 21:24:30 2015 -0300
+
+    actualizado diseño de pagina
+
+commit a6de511055cee30eeb5259c2f6d2fbb8850a4689
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Thu Apr 16 23:53:35 2015 -0300
+
+    add responsive template
+    
+    bootstrap responsive template
+    update background color (body and footer)
+
+commit 74b3ef9406f933b8ea79f0a3c466c5fb90e22449
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Fri Jan 9 20:48:35 2015 -0300
+
+    analitixs y fondo
+    
+    Agregada analitica de google
+    Agregada nueva capa de fondo.
+
+commit 874ecd014bbd729a9aa5f815717cf817f73584f7
+Author: Francisco Javier Llanquipichun Garcia <francisco.llanquipichun@gmail.com>
+Date:   Sun Jan 4 00:50:16 2015 -0300
+
+    firs commit
+    
+    First commit!!
+
+commit 0e07e8fa97403096af6d926df86b412b6d535c3a
+Author: franciscollanquipichun <Francisco.llanquipichun@gmail.com>
+Date:   Sun Jan 4 00:34:01 2015 -0300
+
+    Initial commit
