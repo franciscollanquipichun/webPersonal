@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0047)http://getbootstrap.com/examples/sticky-footer/ -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="Expires" content="Fri, 19 Jun 2014 00:00:00 GMT">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="My personal web site.">
     <meta name="author" content="Francisco Llanquipichun">
@@ -12,17 +14,11 @@
 
     <title>Francisco Llanquipichun - @f_llanquipichun</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link href="css/social-buttons.css" rel="stylesheet">
   </head>
 
   <body>
@@ -38,116 +34,158 @@
                 Soy ingeniero en informática, desarrollador de software especializado en sistemas web.
             </p>
             <div class="lead">
-                <img class="img-circle" alt="Trabajo" src="image/escritorio_520.jpg" height="150" width="150">
-                <img class="img-circle" alt="Francisco Llanquipichun" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e35/12145279_488528207996142_788503023_n.jpg" height="150" width="150">
-                <img class="img-circle" alt="Temuco" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xta1/t51.2885-15/e15/10919081_690239857762766_1622122550_n.jpg" height="150" width="150">
+                <img class="rounded-circle" alt="Temuco" src="https://instagram.fccp2-1.fna.fbcdn.net/t51.2885-15/e35/20066760_851448058351539_4226715609922011136_n.jpg" height="150" width="150">
+                <img class="rounded-circle" alt="Francisco Llanquipichun" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e35/12145279_488528207996142_788503023_n.jpg" height="150" width="150">
+                <img class="rounded-circle" alt="Trabajo" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xta1/t51.2885-15/e15/10919081_690239857762766_1622122550_n.jpg" height="150" width="150">
             </div>
         </section>
 
-        <section class="content-body">
-            <p>
-                Experimentado <strong>desarrollador</strong> e integrador de <strong>componentes de software</strong> para sistemas web basados en gestión de contenidos.
-                Revisa mi
-                <a href="https://www.linkedin.com/pub/francisco-llanquipichun-garcia/4a/a96/643" target="_blank" title="LinkedIn">
-                    Linked <i class="fa fa-linkedin-square"></i>
-                </a>
-                para saber más sobre mi experiencia y proyectos profesionales.
-            </p>
-            <p>
-                En mi tiempo libre me dedico a <strong>proyectos personales</strong> como por ejemplo el desarrollo de videojuegos.
-                <a href="http://francisco.llanquipichun.cl/unity" title="Tips y tutoriales Unity3d blog" target="_blank">
-                    <i class="fa fa-gamepad"></i> Unity Blog
-                </a>
-            </p>
-        </section>
-
-        <section class="content-social">
-
-            <div class="btn-toolbar">
-                <button id="follow-btn" class="btn btn-warning" role="button">Sigueme!</button>
-                <button id="contact-btn" class="btn btn-warning" role="button">Contactame</button>
-            </div>
-
-            <!-- Follow me -->
-            <div id="follow" class="well">
-                <a id="twitter" href="https://twitter.com/F_Llanquipichun" target="_blank" title="Twitter">
-                    <i class="fa fa-twitter fa-3x"></i>
-                </a>
-                <a id="instagram" href="http://instagram.com/fllanquipichun" target="_blank" title="Instagram">
-                    <i class="fa fa-instagram fa-3x"></i>
-                </a>
-                <a id="spotify" href="http://open.spotify.com/user/12144450007" target="_blank" title="Spotify">
-                    <i class="fa fa-spotify fa-3x"></i>
-                </a>
-                <a id="slideshare" href="http://es.slideshare.net/franciscollanquipichun" target="_blank" title="Slideshare">
-                    <i class="fa fa-slideshare fa-3x"></i>
-                </a>
-            </div>
-
-            <!-- Contact to me -->
-            <div id="contact" class="well">
-                <a id="linkedin" title="LinkedIn">
-                    <i class="fa fa-linkedin-square fa-3x"></i>
-                </a>
-                <a id="xing" href="https://www.xing.com/profile/Francisco_Llanquipichun" target="_blank" title="Xing">
-                    <i class="fa fa-xing-square fa-3x"></i>
-                </a>
-                <a id="google" href="https://plus.google.com/+FranciscoLlanquipichun" target="_blank" title="Google+">
-                    <i class="fa fa-google-plus-square fa-3x"></i>
-                </a>
-                <a id="mail" title="Contact form">
-                    <i class="fa fa-envelope fa-3x"></i>
-                </a>
-
-                <div id="contact-linkedin">
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-                    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/francisco-llanquipichun-garcia/4a/a96/643" data-format="inline" data-related="false"></script>
+        <section>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                        Soy <strong>ingeniero de software</strong> especializado en sistemas web.<br>
+                    </p>
+                    <p>
+                        <small>
+                            Tengo experiencia como constructor de componentes de software,
+                            modelado y desarrollo de soluciones informáticas para empresas en el área pública y privada.
+                        </small>
+                    </p>
                 </div>
+                <div class="col-sm-6">
+                    <p>
+                        Mi <strong>principal motivación</strong> es construir herramientas que faciliten el trabajo cotidiano,
+                        <small>
+                            teniendo muy en cuenta la calidad reflejada en requisitos no funcionales como:
+                            agilidad, usabilidad y seguridad del software.
+                        </small>
+                    </p>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-6 col-sm-3 text-center">
+                    <h4><i class="fa fa-code" aria-hidden="true"></i></h4>
+                    <p>Programación</p>
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                    <h4><i class="fa fa-laptop" aria-hidden="true"></i></h4>
+                    <p>Desarrollo Web</p>
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                    <h4>CMS</h4>
+                    <p>Content management system</p>
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                    <h4><i class="fa fa-gamepad" aria-hidden="true"></i></h4>
+                    <p>Videojuegos</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="content-social row">
+            <div class="col-sm-6 sr-only">
                 <!-- Contact form -->
-
-                <form id="contact-form" method="POST" action="mailto.php">
+                <form id="contact-form sr-only" method="POST" action="mailto.php">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre</label>
-                        <input type="text" name="nombre" class="form-control" placeholder="Su nombre">
+                        <label for="exampleInputEmail1" class="sr-only">Nombre</label>
+                        <input name="nombre" class="form-control form-control-sm" placeholder="Su nombre">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">E-mail</label>
-                        <input type="email" name="mail" class="form-control" id="exampleInputEmail1" placeholder="Su correo electrónico">
+                        <label for="exampleInputEmail1" class="sr-only">E-mail</label>
+                        <input type="email" name="mail" class="form-control form-control-sm" id="exampleInputEmail1" placeholder="Su correo electrónico">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Mensaje</label>
-                        <textarea class="form-control" name="text" id="message" placeholder="Su mensaje ..."></textarea>
-                        <p id="text-count">0:255</p>
+                        <label for="exampleInputEmail1" class="sr-only">Mensaje</label>
+                        <textarea class="form-control form-control-sm" name="text" id="message" placeholder="Su mensaje ..."></textarea>
+                        <small id="text-count" class="form-text text-muted">0:255</small>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6Lcy5g0TAAAAALBzu4x2k7wvTcAX5YACZefejah2"></div>
 
-                    <div id="form-submit-area" role="alert">
+                    <div id="form-submit-area" role="alert" class="form-group">
                         <button id="submit-btn" type="submit" class="btn btn-primary alert-form-response"> Enviar formulario <i class="fa fa-paper-plane"></i></button>
-                        <div class="alert-form-response form-msg"></div>
+                        <div class="alert-form-response form-msg d-inline-block"></div>
                     </div>
                 </form>
-
             </div>
         </section>
-
     </div>
 
     <footer class="footer">
       <div class="container">
+          <div class="text-center">
+              <ul class="social-network social-circle">
+                  <li>
+                      <a href="https://twitter.com/F_Llanquipichun" class="icoTwitter d-inline-block" title="Twitter">
+                          <i class="fa fa-twitter"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://instagram.com/fllanquipichun" class="icoIstagram d-inline-block" title="Instagram">
+                          <i class="fa fa-instagram"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://open.spotify.com/user/12144450007" class="icoSpotify d-none d-sm-inline-block" title="Spotify">
+                          <i class="fa fa-spotify"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://es.slideshare.net/franciscollanquipichun" class="icoSlideshare d-none d-sm-inline-block" title="Slideshare">
+                          <i class="fa fa-slideshare"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://plus.google.com/+FranciscoLlanquipichun" class="icoGoogle d-inline-block" title="Google +">
+                          <i class="fa fa-google-plus"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.linkedin.com/in/franciscollanquipichun" class="icoLinkedin d-inline-block" title="LinkedIn">
+                          <i class="fa fa-linkedin"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.xing.com/profile/Francisco_Llanquipichun" class="icoXing d-none d-sm-inline-block" title="Xing">
+                          <i class="fa fa-xing"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
           <p class="text-muted">
-              2015 Francisco Llanquipichun, personal website<br>
-              <i class="fa fa-html5"></i> <i class="fa fa-css3"></i> · Bootstrap · <i class="fa fa-flag"></i> fontawesome.io · <a href="https://github.com/franciscollanquipichun/webPersonal" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+              2015 - 2017 Francisco Llanquipichun, personal website<br>
+              <i class="fa fa-html5"></i> <i class="fa fa-css3"></i>
+              · <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>
+              · <a href="http://fontawesome.io/" target="_blank"><i class="fa fa-flag"></i> fontawesome.io</a>
+              · <a href="https://github.com/franciscollanquipichun/webPersonal" target="_blank"><i class="fa fa-github"></i> GitHub</a>
           </p>
       </div>
     </footer>
+    <i class="fa fa-heart" style="font-size:5px;color:lightcoral;position:absolute;bottom:82px;right:2px;" data-toggle="modal" data-target="#myModal" ></i>
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="image/13381074_1711983835688852_1004444398_n.jpg" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                    <i class="fa fa-heart" aria-hidden="true" style="color:lightcoral"></i>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
     <!-- scripts -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/cfbf37637b.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -157,7 +195,6 @@
 
         ga('create', 'UA-58339932-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 
 </body></html>

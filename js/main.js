@@ -1,12 +1,15 @@
 /**
- * Created by Francisco Llanquipichun on 03-01-15.
+ * Created by
+ * Francisco Llanquipichun on 03-01-15.
  */
 
 $( document ).ready(function() {
-    openFollowMe();
-    openContact();
-    openContactForm();
-    openContactLinkedIn();
+
+    // form message lengt
+    $("#message").keyup(function(){
+        var ms = $(this).val();
+        $( "#text-count" ).html(ms.length+":255");
+    });
 
     $('#contact-form').on('submit', function (e) {
         sendAjaxForm();
@@ -14,44 +17,7 @@ $( document ).ready(function() {
         //OR
         return false;
     });
-
 });
-
-function openFollowMe() {
-    $( "#follow-btn" ).click(function() {
-        $("#contact").hide();
-        $("#follow").toggle("fast");
-    });
-}
-function openContact() {
-    $( "#contact-btn" ).click(function() {
-        $("#follow").hide();
-        $("#contact").toggle("fast");
-    });
-}
-
-function openContactForm() {
-    $( "#mail" ).click(function() {
-        $("#contact-linkedin" ).hide();
-        $("#contact-form").toggle("fast");
-        textcount();
-    });
-}
-
-function openContactLinkedIn() {
-    $( "#linkedin" ).click(function() {
-        $("#contact-form" ).hide();
-        $("#contact-linkedin").toggle("fast");
-        textcount();
-    });
-}
-
-function textcount() {
-    $("#message").keyup(function(){
-        var ms = $(this).val();
-        $( "#text-count" ).html(ms.length+":255");
-    });
-}
 
 function sendAjaxForm() {
     var responseArea = $('#form-submit-area');

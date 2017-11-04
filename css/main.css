@@ -6,7 +6,7 @@ html {
 }
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    margin-bottom: 180px;
     /* background gradient */
     background: rgb(252,255,244); /* Old browsers */
     background: -moz-linear-gradient(-45deg,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6+ */
@@ -17,13 +17,18 @@ body {
     background: linear-gradient(135deg,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+section {
+    margin: 3.5em 0;
+}
+
 .footer {
     background: #333 url("../image/texture.png");
     bottom: 0;
     position: absolute;
     text-align: center;
     /* Set the fixed height of the footer here */
-    height: 80px;
+    height: 180px;
     width: 100%;
 }
 .footer a {
@@ -38,10 +43,6 @@ body {
 .header .lead img {
     width: 150px;
     margin: 0 7px;
-}
-
-.content-body, .content-social {
-    border-top: solid;
 }
 
 .content-social {
@@ -61,87 +62,28 @@ body {
     max-width: 680px;
     padding: 0 15px;
 }
-.container .text-muted {
-    margin: 20px 0;
+
+.tab-content {
+    background-color: rgba(250,250,250,0.3);
+    padding: 25px 0;
 }
 
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: rgba(250,250,250,0.3);
+}
 
 /* Main style
 -------------------------------------------------- */
-
-form, #contact-linkedin {
-    border-top: 1px solid rgba(10,10,10,0.2);
-    display: none;
-    margin-top: 15px;
-    padding: 7px 3px 5px 3px;
-}
-
-form #text-count {
-    font-size: 11px;
-    text-align: right;
-}
-
-.form-group input, .form-group textarea{
+.form-group input, .form-group textarea {
     background: #363636;
     border-color: #222222;
     color: honeydew;
 }
 
-#vcard {
-    max-width: 500px;
-    min-width: 380px;
-    background-color:rgba(250,250,250,0.3);
-}
-#follow, #contact {
-    background-color:rgba(250,250,250,0.3);
-    border-color: rgba(10,10,10,0.2);
-    display: none;
-}
-
-#follow a, #contact a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: rgba(10,10,10,0.2);
-}
-
-#follow a:hover, #contact a:hover {
-    text-shadow: 2px 2px 8px rgba(10,10,10,0.2);
-}
-
-#twitter:hover {
-    color: #4099FF;
-}
-#instagram:hover {
-    color: #517fa4;
-}
-#spotify:hover {
-    color: #81b71a;
-}
-#slideshare:hover {
-    color: #007bb6;
-}
-#linkedin:hover {
-    color: #007bb6;
-}
-#xing:hover {
-    color: #126567;
-}
-#google:hover {
-    color: #dd4b39;
-}
-#mail:hover {
-    color: #F0DC82;
-}
-
-
 /* Special
 -------------------------------------------------- */
 .g-recaptcha {
     margin-bottom: 15px;
-}
-
-.alert-form-response {
-    display: inline-block;
 }
 .form-msg p {
    margin-left: 15px;
