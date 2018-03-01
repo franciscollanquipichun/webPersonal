@@ -51,10 +51,10 @@ ul.social-network li {
 .social-network a.icoIstagram:hover {
     background-color:#517fa4;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i,
-.social-network a.icoIstagram:hover i, .social-network a.icoSlideshare:hover i, .social-network a.icoXing:hover i ,
-.social-network a.icoSpotify:hover i {
+.social-network a.icoRss:hover svg, .social-network a.icoFacebook:hover svg, .social-network a.icoTwitter:hover svg,
+.social-network a.icoGoogle:hover svg, .social-network a.icoVimeo:hover svg, .social-network a.icoLinkedin:hover svg,
+.social-network a.icoIstagram:hover svg, .social-network a.icoSlideshare:hover svg, .social-network a.icoXing:hover svg ,
+.social-network a.icoSpotify:hover svg {
     color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
@@ -72,13 +72,11 @@ a.socialIcon:hover, .socialHoverClass {
     height: 50px;
     font-size:20px;
 }
-.social-circle li i {
-    margin:0;
-    line-height:50px;
-    text-align: center;
+.social-circle li svg {
+    vertical-align: -.5em;
 }
 
-.social-circle li a:hover i, .triggeredHover {
+.social-circle li a:hover svg, .triggeredHover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -ms--transform: rotate(360deg);
@@ -89,7 +87,7 @@ a.socialIcon:hover, .socialHoverClass {
     -ms-transition: all 0.2s;
     transition: all 0.2s;
 }
-.social-circle i {
+.social-circle svg {
     color: inherit;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
