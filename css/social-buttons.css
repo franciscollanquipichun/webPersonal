@@ -51,10 +51,13 @@ ul.social-network li {
 .social-network a.icoIstagram:hover {
     background-color:#517fa4;
 }
+.social-network a.icoGithub:hover {
+    background-color:#4d2779;
+}
 .social-network a.icoRss:hover svg, .social-network a.icoFacebook:hover svg, .social-network a.icoTwitter:hover svg,
 .social-network a.icoGoogle:hover svg, .social-network a.icoVimeo:hover svg, .social-network a.icoLinkedin:hover svg,
 .social-network a.icoIstagram:hover svg, .social-network a.icoSlideshare:hover svg, .social-network a.icoXing:hover svg ,
-.social-network a.icoSpotify:hover svg {
+.social-network a.icoSpotify:hover svg, a.icoGithub:hover svg {
     color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
@@ -73,7 +76,7 @@ a.socialIcon:hover, .socialHoverClass {
     font-size:20px;
 }
 .social-circle li svg {
-    vertical-align: -.5em;
+    vertical-align: -.6em;
 }
 
 .social-circle li a:hover svg, .triggeredHover {
