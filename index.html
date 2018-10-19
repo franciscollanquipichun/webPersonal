@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0047)http://getbootstrap.com/examples/sticky-footer/ -->
-<html lang="es">
-  <head>
+<html lang="es" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="Expires" content="Fri, 19 Jun 2014 00:00:00 GMT">
@@ -12,169 +12,207 @@
     <meta name="author" content="Francisco Llanquipichun">
     <link rel="icon" sizes="128x128" href="image/usr.png">
 
-    <title>Francisco Llanquipichun - @f_llanquipichun</title>
+    <title itemprop="name">Francisco Llanquipichun - @f_llanquipichun</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/social-buttons.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Begin page content -->
-    <div class="container">
+<!-- Begin page content -->
+<div class="container" itemprop="about" itemscope itemtype="http://schema.org/Person">
 
-        <section class="header">
-            <div class="page-header header">
-                <h1>Francisco J. Llanquipichun</h1><small class="text-muted">@f_llanquipichun</small>
+    <section class="header">
+        <div class="page-header header">
+            <h1 itemprop="name">
+                <span itemprop="givenName">Francisco</span> J. <span itemprop="familyName">Llanquipichun</span>
+            </h1>
+            <small class="text-muted">@f_llanquipichun</small>
+        </div>
+        <p class="lead" itemprop="disambiguatingDescription">
+            Soy <span itemprop="jobTitle">ingeniero en informática</span>, desarrollador de software especializado en sistemas web.
+        </p>
+    </section>
+
+    <section>
+        <div class="row" itemprop="description">
+            <div class="col-sm-6">
+                <p>
+                    Tengo experiencia como desarrollador de componentes de software,
+                    modelado y desarrollo de soluciones informáticas para empresas en el área pública y privada.
+                </p>
             </div>
-            <p class="lead">
-                Soy ingeniero en informática, desarrollador de software especializado en sistemas web.
-            </p>
-            <div class="lead">
-                <img class="rounded-circle" alt="Temuco" src="https://instagram.fccp2-1.fna.fbcdn.net/t51.2885-15/e35/20066760_851448058351539_4226715609922011136_n.jpg" height="150" width="150">
-                <img class="rounded-circle" alt="Francisco Llanquipichun" src="https://instagram.fzal1-1.fna.fbcdn.net/vp/5be2f8f77691a406488df9351a7f0ac8/5B0E6977/t51.2885-15/s640x640/sh0.08/e35/12145279_488528207996142_788503023_n.jpg" height="150" width="150">
-                <img class="rounded-circle" alt="Trabajo" src="https://instagram.fzal1-1.fna.fbcdn.net/vp/67646077408eda62b0a95a00d26df77f/5B1235C9/t51.2885-15/e15/10919081_690239857762766_1622122550_n.jpg" height="150" width="150">
-            </div>
-        </section>
-
-        <section>
-            <div class="row">
-                <div class="col-sm-6">
-                    <p>
-                        Tengo experiencia como desarrollador de componentes de software,
-                        modelado y desarrollo de soluciones informáticas para empresas en el área pública y privada.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        Mi <strong>principal motivación</strong> es construir herramientas que faciliten el trabajo cotidiano,
-                        <span class="text-secondary">
+            <div class="col-sm-6">
+                <p>
+                    Mi <strong>principal motivación</strong> es construir herramientas que faciliten el trabajo cotidiano,
+                    <span class="text-secondary">
                             teniendo muy en cuenta la calidad reflejada en requisitos no funcionales como:
                             agilidad, usabilidad y seguridad del software.
-                        </span>
-                    </p>
-                </div>
+                    </span>
+                </p>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-6 col-sm-3 text-center">
-                    <h4><i class="far fa-file-code" aria-hidden="true"></i></h4>
-                    <p>Programación</p>
-                </div>
-                <div class="col-6 col-sm-3 text-center">
-                    <h4><i class="fa fa-laptop" aria-hidden="true"></i></h4>
-                    <p>Desarrollo Web</p>
-                </div>
-                <div class="col-6 col-sm-3 text-center">
-                    <h4>CMS</h4>
-                    <p>Content management system</p>
-                </div>
-                <div class="col-6 col-sm-3 text-center">
-                    <h4><i class="fa fa-gamepad" aria-hidden="true"></i></h4>
-                    <p>Videojuegos</p>
-                </div>
+        <div class="row" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+            <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="col-6 col-sm-3 text-center">
+                <h4><i class="far fa-file-code" aria-hidden="true"></i></h4>
+                <p itemprop="name">Programación</p>
             </div>
-        </section>
-
-
-        <section class="content-social row">
-            <div class="col-sm-6 sr-only">
-                <!-- Contact form -->
-                <form id="contact-form sr-only" method="POST" action="mailto.php">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1" class="sr-only">Nombre</label>
-                        <input name="nombre" class="form-control form-control-sm" placeholder="Su nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1" class="sr-only">E-mail</label>
-                        <input type="email" name="mail" class="form-control form-control-sm" id="exampleInputEmail1" placeholder="Su correo electrónico">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1" class="sr-only">Mensaje</label>
-                        <textarea class="form-control form-control-sm" name="text" id="message" placeholder="Su mensaje ..."></textarea>
-                        <small id="text-count" class="form-text text-muted">0:255</small>
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6Lcy5g0TAAAAALBzu4x2k7wvTcAX5YACZefejah2"></div>
-
-                    <div id="form-submit-area" role="alert" class="form-group">
-                        <button id="submit-btn" type="submit" class="btn btn-primary alert-form-response"> Enviar formulario <i class="fa fa-paper-plane"></i></button>
-                        <div class="alert-form-response form-msg d-inline-block"></div>
-                    </div>
-                </form>
+            <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="col-6 col-sm-3 text-center">
+                <h4><i class="fa fa-laptop" aria-hidden="true"></i></h4>
+                <p itemprop="name">Desarrollo Web</p>
             </div>
-        </section>
+            <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="col-6 col-sm-3 text-center">
+                <h4 itemprop="alternateName">CMS</h4>
+                <p itemprop="name">Content management system</p>
+            </div>
+            <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="col-6 col-sm-3 text-center">
+                <h4><i class="fa fa-gamepad" aria-hidden="true"></i></h4>
+                <p itemprop="name">Videojuegos</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="content-social row">
+        <div class="col-sm-6 sr-only">
+            <!-- Contact form -->
+            <form id="contact-form sr-only" method="POST" action="mailto.php">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="sr-only">Nombre</label>
+                    <input name="nombre" class="form-control form-control-sm" placeholder="Su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="sr-only">E-mail</label>
+                    <input type="email" name="mail" class="form-control form-control-sm" id="exampleInputEmail1"
+                           placeholder="Su correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="sr-only">Mensaje</label>
+                    <textarea class="form-control form-control-sm" name="text" id="message" placeholder="Su mensaje ..."></textarea>
+                    <small id="text-count" class="form-text text-muted">0:255</small>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6Lcy5g0TAAAAALBzu4x2k7wvTcAX5YACZefejah2"></div>
+
+                <div id="form-submit-area" role="alert" class="form-group">
+                    <button id="submit-btn" type="submit" class="btn btn-primary alert-form-response"> Enviar formulario <i
+                            class="fa fa-paper-plane"></i></button>
+                    <div class="alert-form-response form-msg d-inline-block"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="text-center">
+            <ul class="social-network social-circle">
+                <li>
+                    <a itemprop="url" href="https://twitter.com/F_Llanquipichun" class="icoTwitter d-inline-block" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="https://instagram.com/fllanquipichun" class="icoIstagram d-inline-block" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="https://open.spotify.com/user/12144450007" class="icoSpotify d-none d-sm-inline-block"
+                       title="Spotify">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="https://es.slideshare.net/franciscollanquipichun" class="icoSlideshare d-none d-sm-inline-block"
+                       title="Slideshare">
+                        <i class="fab fa-slideshare"></i>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="https://plus.google.com/+FranciscoLlanquipichun" class="icoGoogle d-none d-sm-inline-block"
+                       title="Google +">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="https://www.linkedin.com/in/franciscollanquipichun" class="icoLinkedin d-inline-block"
+                       title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="https://github.com/franciscollanquipichun" class="icoGithub d-inline-block" title="Github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="text-muted">
+            <time datetime="2015-01-04" itemprop="dateCreated">2015</time>
+            -
+            <time datetime="2018" itemprop="copyrightYear">2018</time>
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">Francisco Llanquipichun</span>
+            </span>,
+            <span itemprop="description">personal website</span>
+        </p>
+        <p class="text-muted">
+            <span itemprop="material" itemscope itemtype="http://schema.org/Product">
+                <a itemprop="url" href="https://getbootstrap.com" target="_blank">
+                    <span itemprop="name">Bootstrap</span>
+                </a>
+            </span>
+            ·
+            <span itemprop="material" itemscope itemtype="http://schema.org/Product">
+                <a itemprop="url" href="http://fontawesome.io/" target="_blank">
+                    <i class="fab fa-font-awesome"></i> <span itemprop="name">fontawesome.io</span>
+                </a>
+            </span>
+            ·
+            <span itemprop="about" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+            <a itemprop="codeRepository"
+               href="https://github.com/franciscollanquipichun/webPersonal" target="_blank">
+            <i class="fab fa-github"></i> GitHub</a>
+            </span>
+        </p>
     </div>
+</footer>
 
-    <footer class="footer">
-      <div class="container">
-          <div class="text-center">
-              <ul class="social-network social-circle">
-                  <li>
-                      <a href="https://twitter.com/F_Llanquipichun" class="icoTwitter d-inline-block" title="Twitter">
-                          <i class="fab fa-twitter"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://instagram.com/fllanquipichun" class="icoIstagram d-inline-block" title="Instagram">
-                          <i class="fab fa-instagram"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://open.spotify.com/user/12144450007" class="icoSpotify d-none d-sm-inline-block" title="Spotify">
-                          <i class="fab fa-spotify"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://es.slideshare.net/franciscollanquipichun" class="icoSlideshare d-none d-sm-inline-block" title="Slideshare">
-                          <i class="fab fa-slideshare"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://plus.google.com/+FranciscoLlanquipichun" class="icoGoogle d-none d-sm-inline-block" title="Google +">
-                          <i class="fab fa-google-plus-g"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.linkedin.com/in/franciscollanquipichun" class="icoLinkedin d-inline-block" title="LinkedIn">
-                          <i class="fab fa-linkedin"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://github.com/franciscollanquipichun" class="icoGithub d-inline-block" title="Github">
-                          <i class="fab fa-github"></i>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-          <p class="text-muted">2015 - 2018 Francisco Llanquipichun, personal website</p>
-          <p class="text-muted">
-              <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>
-              · <a href="http://fontawesome.io/" target="_blank"><i class="fab fa-font-awesome"></i> fontawesome.io</a>
-              · <a href="https://github.com/franciscollanquipichun/webPersonal" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          </p>
-      </div>
-    </footer>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+<!-- scripts -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script>
+    (function ( i, s, o, g, r, a, m ) {
+        i[ 'GoogleAnalyticsObject' ] = r;
+        i[ r ] = i[ r ] || function () {
+            (i[ r ].q = i[ r ].q || []).push( arguments )
+        }, i[ r ].l = 1 * new Date();
+        a = s.createElement( o ),
+            m = s.getElementsByTagName( o )[ 0 ];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore( a, m )
+    })( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
-    <!-- scripts -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga( 'create', 'UA-58339932-1', 'auto' );
+    ga( 'send', 'pageview' );
+</script>
 
-        ga('create', 'UA-58339932-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-</body></html>
+</body>
+</html>
