@@ -120,7 +120,7 @@
         <p class="text-muted">
             <time datetime="2015-01-04" itemprop="dateCreated">2015</time>
             -
-            <time datetime="2018" itemprop="copyrightYear">2018</time>
+            <time id="current-year" datetime="2018" itemprop="copyrightYear">2015</time>
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span itemprop="name">Francisco Llanquipichun</span>
             </span>,
@@ -175,6 +175,11 @@
 
     ga( 'create', 'UA-58339932-1', 'auto' );
     ga( 'send', 'pageview' );
+</script>
+<script type="application/javascript">
+    (function () {
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    })();
 </script>
 
 </body>
