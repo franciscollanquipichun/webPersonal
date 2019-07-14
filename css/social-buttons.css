@@ -30,9 +30,6 @@ ul.social-network li {
 .social-network a.icoTwitter:hover {
     background-color:#4099FF;
 }
-.social-network a.icoGoogle:hover {
-    background-color:#BD3518;
-}
 .social-network a.icoVimeo:hover {
     background-color:#0590B8;
 }
@@ -55,9 +52,9 @@ ul.social-network li {
     background-color:#4d2779;
 }
 .social-network a.icoRss:hover svg, .social-network a.icoFacebook:hover svg, .social-network a.icoTwitter:hover svg,
-.social-network a.icoGoogle:hover svg, .social-network a.icoVimeo:hover svg, .social-network a.icoLinkedin:hover svg,
-.social-network a.icoIstagram:hover svg, .social-network a.icoSlideshare:hover svg, .social-network a.icoXing:hover svg ,
-.social-network a.icoSpotify:hover svg, a.icoGithub:hover svg {
+.social-network a.icoVimeo:hover svg, .social-network a.icoLinkedin:hover svg, .social-network a.icoIstagram:hover svg,
+.social-network a.icoSlideshare:hover svg, .social-network a.icoXing:hover svg , .social-network a.icoSpotify:hover svg,
+a.icoGithub:hover svg {
     color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
